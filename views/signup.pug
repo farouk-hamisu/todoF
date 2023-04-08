@@ -1,0 +1,26 @@
+doctype html 
+html 
+  head 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/custom.css")
+    script(src="/script.js")
+    script(src="/bootstrap.min.js")
+  body
+    section
+      .container
+        form(action="/create_account", method="post", class="form")
+          h2(class="head") hello
+          label(for="user_name") username 
+          input(type ="text", placeholder="user name", name="user_name", class="input", required)
+          label(for="email") email
+          input(type="text", placeholder="email", name="email", class="input", required)
+          label(for="password") password
+          input(type="text", placeholder="password", name="password", class="input", required)
+          label(for="confirm_password" )  confirm password
+          input(type="text", placeholder="confirm password", name="confirm_password", class="input", required)
+          input(type="submit", class="btn btn-primary", value="signup", class="button", required)
+          a(href="/login", class="link") already have an account ? 
+
+      

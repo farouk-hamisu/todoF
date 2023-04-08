@@ -1,0 +1,24 @@
+doctype html 
+html 
+  head 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/custom.css")
+    script(src="/script.js")
+  body 
+    include header.pug
+    .section(class="todo-section")
+      h1(class = "head") Recent Todos 
+      .container  
+        if allTodos 
+          .history
+            div todo 
+            div date
+          .todo-container 
+            each todo in allTodos
+              .todo-item(class="todo-item-history") 
+                span=todo.todo
+                -
+                  let date = new Date(todo.createdAt)
+                button=date.toLocaleDateString() 
+

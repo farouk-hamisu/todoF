@@ -1,0 +1,27 @@
+doctype html            
+html 
+  head 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/custom.css")
+    script(src="/script.js")
+  header(class = "primary-header")
+    div(class = "logo")
+      span="hello" + " " + username 
+    button(class="mobile-nav-toggler" data-icon="menu")
+      menu 
+    nav 
+      ul(class = "primary-navigation flex" data-visible="false")
+        li
+          a(href="/home")
+            span home
+        li 
+          a(href="/history") 
+            span history 
+        li 
+          a(href="/profile")
+            span  profile 
+        li 
+          a(href="/logOut")
+            span logout
+         
