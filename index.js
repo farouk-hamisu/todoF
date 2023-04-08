@@ -43,4 +43,4 @@ app.use((err,req, res, next)=>{
 app.listen(app.get("port"), ()=>{
   console.log(`server started at ${app.get("port")}`); 
 }); 
-
+console.log("hello world app"); 
